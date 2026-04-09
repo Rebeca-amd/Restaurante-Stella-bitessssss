@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante Stellar Bites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #6a0dad;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hero {
+            background-image: url('imagenes/portada.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stellar Bites</h1>
+    <p>Sabores que te llevan a otro nivel</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Bienvenido a Stellar Bites</h2>
+    <p>Una experiencia gastronómica única</p>
+</section>
+
+<section id="inicio">
+    <h2>Inicio</h2>
+    <div class="card">
+        <p>Disfruta de nuestros platillos con ingredientes frescos y un ambiente increíble.</p>
+        <!-- IMAGEN DE INICIO -->
+        <img src="restaurante.jpg" alt="Interior del restaurante">
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Menú</h2>
+
+    <div class="card">
+        <h3>Tacos Gourmet</h3>
+        <p>$120 MXN</p>
+        <!-- IMAGEN -->
+        <img src="tacos.jpg" alt="Tacos">
+    </div>
+
+    <div class="card">
+        <h3>Sushi Especial</h3>
+        <p>$180 MXN</p>
+        <!-- IMAGEN -->
+        <img src="sushi.jpg" alt="Sushi">
+    </div>
+
+    <div class="card">
+        <h3>Alitas BBQ</h3>
+        <p>$150 MXN</p>
+        <!-- IMAGEN -->
+        <img src="alitas.jpeg" alt="Alitas">
+    </div>
+
+</section>
+
+<section id="reservas">
+    <h2>Reservas</h2>
+    <div class="card">
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <input type="date" required>
+            <input type="time" required>
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+</section>
+
+<section id="acerca">
+    <h2>Acerca de</h2>
+    <div class="card">
+        <p>Somos un restaurante moderno enfocado en brindar experiencias únicas.</p>
+        <img src="chef.jpg" alt="Chef">
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="card">
+        <p>Email: contacto@stellarbites.com</p>
+        <p>Teléfono: 55 1234 5678</p>
+        <p>Ubicación: Ciudad de México</p>
+    </div>
+</section>
+
+<section id="terminos">
+    <h2>Términos y Condiciones</h2>
+    <div class="card">
+        <p>El uso de este sitio implica la aceptación de nuestros términos.</p>
+    </div>
+</section>
+
+<section id="privacidad">
+    <h2>Políticas de Privacidad</h2>
+    <div class="card">
+        <p>Tu información está protegida.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Stellar Bites</p>
+    <p>
+        <a href="#terminos" style="color:white;">Términos</a> |
+        <a href="#privacidad" style="color:white;">Privacidad</a>
+    </p>
+</footer>
+
+</body>
+</html>
